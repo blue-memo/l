@@ -178,7 +178,7 @@ header button:hover {
     bottom: 0;
     width: 2px;
     background-color: #20005D;
-    left: 0px;
+    left: -10px;
     transform: translateX(-50%);
 }
 .timeline-dot {
@@ -188,7 +188,7 @@ header button:hover {
     background-color: #20005D;
     border-radius: 50%;
     transition: 0.3s ease;
-    left: 0px;
+    left: -10px;
     transform: translateX(-50%);
     cursor: pointer;
 }
@@ -212,18 +212,14 @@ header button:hover {
 .dot-5 { top: 100%; transform: translate(-50%, -100%); }
 
 /*=== Hero Section ===*/
-section{
-    margin-left: 80px !important;
-    margin: auto !important;
-}
-.hero {
+.hero{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 80px auto 0 !important;
     max-width: 1100px;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
 }
 .hero-content{
@@ -237,22 +233,15 @@ section{
 }
 
 .hero-content h1 {
-    font-size: 70px;
+    font-size: 55px;
     color: #5800FF;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.hero-img{
-    position: absolute;
-    width: 100%;
-    max-width: 500px;
-    margin-top: 120px;
-    right: 10px;
-}
 .hero-img img{
     width: 100%;
-    height: auto; /* Ensures image maintains aspect ratio */
-    max-width: 500px; /* Restrict max width of image */
+    height: auto;
+    max-width: 400px;
 }
 .hero-buttons {
     display: flex;
@@ -288,70 +277,21 @@ section{
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
     gap: 20px;
     font-size: 24px;
-    margin-top: 50px;
+    bottom: 0px;
 }
 
 span{
     color: #5800FF;
 }
-
-/* Responsive adjustments */
-@media(max-width: 873px) {
-    .hero {
-        flex-direction: column;
-        height: auto;
-        margin-top: 50px;
-    }
-
-    .hero-content {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .hero-img {
-        position: relative;
-        margin-top: 20px;
-        width: 80%;
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-content h1 {
-        font-size: 45px;
-    }
-
-    .hero-content h3 {
+@media(max-width:500px){
+    .hero h3{
         font-size: 22px;
     }
-
-    .hero-buttons {
-        margin-top: 20px;
-        margin: auto;
-        justify-content: center;
-    }
-
-    .social-icons {
-        bottom: 20px;
-        font-size: 20px;
-    }
-}
-
-@media(max-width: 480px) {
-    .hero-content h1 {
+    .hero h1{
         font-size: 40px;
-    }
-
-    .hero-content h3 {
-        font-size: 18px;
-    }
-
-    .hero-buttons {
-        gap: 10px;
     }
 }
