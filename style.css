@@ -114,9 +114,8 @@ header button:hover {
     #navMenu {
         flex-direction: column;
         gap: 10px;
-        background: #09001a50;
+        background: #070014f6;
         position: fixed;
-        backdrop-filter: blur(10px);
         width: 100%;
         max-width: 250px !important;
         height: 300px;
@@ -127,8 +126,13 @@ header button:hover {
         gap: 20px;
         padding: 20px;
     }
+    #navMenu li{
+        padding: 7px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
     #navMenu.active {
-        top: 150px;
+        top: 100px;
     }
     #navMenu a {
         font-size: 22px;
