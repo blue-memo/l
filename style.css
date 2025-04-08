@@ -116,13 +116,13 @@ header button:hover {
         gap: 10px;
         background: #09001a50;
         position: fixed;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
         width: 100%;
         max-width: 250px !important;
         height: 300px;
         border-radius: 10px;
         margin: auto;
-        right: 10px;
+        left: 10px;
         top: -1000px;
         gap: 20px;
         padding: 20px;
