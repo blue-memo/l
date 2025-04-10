@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
-      const buffer = 100; // to trigger a little earlier
+      const buffer = 100; 
 
       if (window.scrollY >= sectionTop - buffer) {
         currentSection = section.getAttribute("id");
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     });
 
-    // Show/hide scroll-to-top button
+    // scroll-to-top button
     scrollTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
   });
 
