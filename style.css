@@ -205,7 +205,7 @@ header button:hover {
     align-items: center;
     z-index: 10;
     width: 100%;
-    max-width: 1100px;
+    max-width: 110px;
     margin: auto;
 }
 @media(max-height: 650px) {
@@ -557,6 +557,7 @@ section{
     box-shadow: inset 0px 0px 10px #ffb87515;
     margin-top: 10px;
 }
+
 #skill h1{
     font-size: 40px;
     text-align: center;
@@ -637,7 +638,7 @@ section{
     color: #A100FF !important;
 }
 .bootstrap .line{
-    background: #A100FF !important ;
+    background: #A100FF !important;
 }
 .bootstrap h2{
     top: 12px;
@@ -708,6 +709,27 @@ section{
         font-size: 30px;
     }
 }
+@media(max-width:490px){
+    #skill{
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        max-width: 250px;
+        padding: 30px !important;
+        justify-content: center;
+    }
+    .react, .php, .figma, .github{ 
+        width: 100%;
+        max-width: 250px !important;
+    }
+    #skill h1{
+        margin-top: 30px;
+    }
+    .line{
+        height: 1px !important;
+        width: 100% !important;
+    }
+}
 
 /*=== Projects section ===*/
 .project{
@@ -723,10 +745,27 @@ section{
     background: linear-gradient(to right,#0C0022, #20005D);
     gap: 15px;
     border: 1px #ae00ff1e solid;
+    position: relative;
+}
+
+.project a{
+    position: absolute;
+    left: 52%;
+    bottom: -10px;
+    transform: translate(-50%, 0);
+    background: linear-gradient(#5800FF, #8c00ff);
+    padding: 10px;
+    border-radius: 10px;
+    width: 25px;
+}
+.project i{
+    font-size: 28px !important;
 }
 @media(max-width:1065px){
     .project{
         max-height: 600px !important;
+        width: 100%;
+        max-width: 400px;
         height: 100%;
         padding: 10px;
     }
@@ -738,7 +777,7 @@ section{
         display: block;
     }
     .project img{
-        max-height: 300px;
+        max-height: 500px;
         max-width: 100%;
         border-radius: 10px 10px 0px 0px !important;
     }
@@ -761,7 +800,6 @@ section{
     width: 90%;
     height: 1px;
     background: #fff;
-
 }
 .project p{
     opacity: 0.70;
@@ -789,4 +827,66 @@ section{
 }
 #css{
     color: #0077FF;
+}
+
+/*=== Features section ===*/
+.features-wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.features{
+    flex-wrap: wrap;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+.features .feature{
+    position: relative;
+    background: linear-gradient(#300286, #180046);
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #08001609;
+}
+.feature:hover{
+    transform: scale(0.97);
+    box-shadow: 0px 0px 50px #0000001a;
+}
+.feature .line{
+    width: 90% !important;
+    margin: auto;
+    height: 1px;
+    background: #fff;
+    display: block !important;
+    margin-top: 50px;
+}
+.feature h1{
+    margin-top: 60px;
+    font-size: 30px;
+}
+.feature p{
+    margin-top: 50px;
+    font-size: 24px;
+    opacity: 0.70;
+    font-weight: 600;
+    max-width: 350px;
+    text-align: center;
+    margin: 30px auto 0px;
+}
+.feature .f-number{
+    position: absolute;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    top: -20px;
+    left: -20px;
+    font-size: 25px;
+    background: linear-gradient(to left, #0A011D, #2D0583);
 }
